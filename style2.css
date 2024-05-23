@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Freeman&family=Jacquard+12&display=swap');
+#background{
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+}
+header{
+    margin-right: 3%;
+    
+}
+#background video{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+#background::after{
+    content: '';
+    width: inherit;
+    height: inherit;
+    inset: 0;
+    position: fixed;
+    background:linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+
+}
+.app{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+.content-body{
+    min-width: 300px;
+   width: 27%;
+   font-size: 1.2rem;
+   margin-right: 5.2rem ;
+    
+}
+h1,h5{
+    text-align: center;
+    color: white;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    
+    
+}
+.task{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    margin-right: 40px;
+
+}
+li{
+    color: white;
+    background: black;
+    margin-top: 1rem;
+    border-radius: 10px;
+
+}
+body{
+    background-color: #000;
+    background-size: 60%;
+    background-clip: unset;
+    font-family: "Freeman", sans-serif;
+    
+}
+.concluir{
+    color: white;
+    background: green;
+    border: none;
+    transition: all 0.3s ease-in-out;
+    margin-right: 5px;
+
+}
+.concluir:hover{
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.2);
+}
+.remover{
+    color: white;
+    background: red;
+    border: none;
+    transition: all 0.3s ease-in-out;
+
+}
+.remover:hover{
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.2);
+}
+
+#taskInput{
+    background: black;
+    width: 20rem;
+    padding: 1rem;
+    letter-spacing: 0.2rem;
+    border-radius: 1rem;
+    color: green;
+    font-size: 1.2rem;
+    border: none;
+    outline-offset: 2px;
+    outline-color: green;
+    cursor: pointer;
+}
+#btn-add-task{
+    color: white;
+    background: green;
+    border: none;
+    padding-inline: 1.3rem;
+    border-radius: 1rem;
+    font-size: 1rem;
+    transition: all 0.2s ease-in-out;
+}
+#total{
+    font-size: 40px;
+}
+
+#ajuda_erro{
+    position: absolute;
+    top: 190px;
+    z-index: -1;
+    margin-right: 1.3rem;
+    letter-spacing: 3px;
+    color: crimson;
+    font-size: 20px;
+    
+    
+    
+}
+#btn-add-task:hover{
+    transition: all 0.3s ease-in-out;  
+    background-color: rgb(0, 78, 0);
+}
+button{
+    cursor: pointer;
+}
+/* PARTE DO GPTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT */
+::-webkit-scrollbar {
+    width: 12px;
+    background-color: #000; /* Fundo preto para imitar o estilo Matrix */
+}
+
+/* Parte de trás do scroll */
+::-webkit-scrollbar-track {
+    background: #000; /* Fundo preto */
+}
+
+/* Thumb do scroll (a parte que você arrasta) */
+::-webkit-scrollbar-thumb {
+    background-color: #0f0; /* Verde neon estilo Matrix */
+    border-radius: 6px;
+    border: 3px solid #000; /* Para adicionar um espaço entre o thumb e a borda do track */
+}
+
+/* Thumb do scroll quando está sendo clicado */
+::-webkit-scrollbar-thumb:active {
+    background-color: #00ff00; /* Cor ainda mais vibrante quando ativo */
+}
+
+/* Parte do scroll que aparece nos cantos ao rolar */
+::-webkit-scrollbar-corner {
+    background: #000;
+}
+
+/* Para navegadores que não suportam Webkit */
+html {
+    scrollbar-width: thin; /* Para navegadores Firefox */
+    scrollbar-color: #0f0 #000; /* Thumb e track */
+}

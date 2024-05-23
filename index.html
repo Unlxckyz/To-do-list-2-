@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do-list</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div id="background">
+        <video autoplay loop muted>
+            <source src="./songs/chuva.mp4">
+        </video>
+        
+    </div>
+    <header>
+        <h1>To-do-List</h1>
+    <h5 id="total" style="  text-align: center;">Tarefas completas: 0 </h5>
+
+    </header>
+    
+
+<div class="main">
+    <div class="app">
+        <input type="text" id="taskInput" placeholder="Adicione uma tarefa...">
+        <button id="btn-add-task" title="Clique aqui para adicionar uma task">+</button>
+        <span id="ajuda_erro"></span>
+        
+    </div>
+    <div class="content-body">
+        <ol id="taskList"></ol>
+    </div>
+
+</div>
+<script src="script.js"></script>
+   
+    
+</body>
+</html>
